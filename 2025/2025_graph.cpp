@@ -13,7 +13,7 @@ int main(){
         ext_team_size = team_size + 1;
         rem = n % k; // Количество бойцов, которые нужно равномерно распределить по нескольким командам
 
-        res = ((n - ext_team_size * rem) * (n - team_size) + (ext_team_size * rem) * (n - ext_team_size)) / 2;
+        res = n * (n - 1) / 2 - (k - rem) * team_size * (team_size - 1) / 2 - rem * team_size * (team_size + 1) / 2;
 
         std::cout << res << "\n";
     }
