@@ -1,3 +1,5 @@
+// O(n), где n - общее количество бойцов
+
 #include <iostream>
 
 int main(){
